@@ -1,0 +1,96 @@
+---
+sidebar_position: 2
+hide_table_of_contents: true
+---
+
+# Getting Started
+
+## Your First 30 Minutes with AI
+
+This walkthrough gets you from zero to productive with AI in a single sitting. By the end, you will have written your first structured prompt, evaluated the output critically, and identified a quick win you can apply to your work today.
+
+---
+
+## Step 1: Choose Your Tool
+
+You do not need to pick just one -- most of your team already uses multiple AI tools. Here is when to reach for each:
+
+- **Claude** (by Anthropic) -- Best for analysis, writing, coding, and reasoning through complex problems. Handles long documents well. Use this when you need to draft a policy, analyze a report, or work through a multi-step problem.
+- **Gemini** (by Google) -- Best for Google Workspace integration, real-time web search, and multimodal tasks. Use this when you need to summarize Gmail threads, create Google Slides, or pull in live data.
+
+For a deeper comparison including specific use cases and feature breakdowns, see [Your AI Toolkit](/your-ai-toolkit).
+
+---
+
+## Step 2: Your First Prompt
+
+The difference between a mediocre AI output and a genuinely useful one almost always comes down to the prompt. Here is the same task done two ways.
+
+**The goal:** Generate a monthly patient metrics summary for the Freddie leadership team.
+
+**Bad prompt:**
+
+```text
+Write me a report about patient metrics.
+```
+
+This produces a generic, vague output that you would need to heavily rewrite. The AI has no idea what metrics you care about, who the audience is, or what format you need.
+
+**Good prompt:**
+
+```text
+You are a healthcare operations analyst at PurposeMed, a cross-border
+telehealth company. PurposeMed operates three brands: Freddie (HIV/PrEP),
+Frida (ADHD), and Foria (gender-affirming care).
+
+Write a monthly patient metrics summary for the Freddie leadership team
+covering January 2026. Include these sections:
+
+1. Executive summary (3-4 sentences)
+2. Key metrics table: new patient enrollments, active prescriptions,
+   prescription renewal rate, average time-to-first-appointment
+3. Month-over-month trends with brief analysis
+4. Two recommended actions based on the data trends
+
+Format: Use markdown with headers and a table. Keep the tone professional
+but concise -- this audience reviews 10+ reports weekly.
+
+Constraint: Do not include any real patient data. Use realistic but
+fictional numbers for illustration purposes.
+```
+
+Notice what the good prompt includes: a **role** for the AI, **context** about PurposeMed, a specific **format** with numbered sections, and explicit **constraints**. This is the foundation of effective prompting that you will build on throughout this training.
+
+---
+
+## Step 3: Evaluate and Iterate
+
+Your first output is a draft, not a final product. Here is how to assess what you get back:
+
+**Check for accuracy.** AI can present fabricated information with complete confidence. If the output includes statistics, regulatory references, or clinical claims, verify them independently. This is especially critical in healthcare.
+
+**Check for completeness.** Did the output address every section you requested? If it skipped something or combined sections, tell it specifically what is missing.
+
+**Check for tone.** Read the output as if you were the intended audience. Does it match how your team actually communicates? If it sounds too formal, too casual, or too generic, give the AI a reference example of the tone you want.
+
+**When to iterate vs. start over.** If the output is 70% or more of what you need, iterate -- ask the AI to revise specific sections. If the fundamental approach is wrong (wrong audience, wrong structure, wrong angle), start a new conversation with a revised prompt rather than trying to course-correct.
+
+---
+
+## Quick Wins by Role
+
+Every person on your team can save meaningful time this week. Pick the row that matches your function and try it before your next meeting.
+
+| Your Role | Try This First | Time Saved |
+|---|---|---|
+| Executive / CEO | Summarize 50+ Slack DMs into a 5-point brief | 30-60 min/day |
+| Chief of Staff | Draft an all-hands email from bullet points | 20-30 min |
+| HR | Generate job descriptions from role requirements | 1-2 hours |
+| Finance | Analyze budget variance with narrative explanation | 1-2 hours |
+| Marketing | Research competitor positioning summary | 30-60 min |
+| Operations | Draft prior authorization templates for Freddie patients | 30 min each |
+| Product / Engineering | Generate code review summaries from PR descriptions | 15-30 min |
+
+:::tip
+Bookmark this page -- come back to try each role's quick win this week. The time savings compound quickly once prompting becomes second nature.
+:::

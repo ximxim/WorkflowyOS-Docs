@@ -1,199 +1,151 @@
 ---
-sidebar_position: 3
+sidebar_position: 20
 hide_table_of_contents: true
 ---
 
-import FAQStructuredData from "@site/src/theme/MDXComponents/FAQStructuredData";
+import FAQStructuredData from '@site/src/theme/MDXComponents/FAQStructuredData';
 
 # Frequently Asked Questions
 
 ---
 
-export const generalUsageFaqs = [
-  {
-    question: "How can I start using our Discord bot to generate AI content?",
-    answer: (
-      <>
-        <p>
-          Getting started is simple! First,{" "}
-          <a href="https://discord.com/oauth2/authorize?client_id=1374839567907029034">
-            invite our bot to your Discord server
-          </a>{" "}
-          using the invitation link. Once added, you can start generating
-          content by using our slash commands like <code>/generate</code>{" "}
-          followed by your prompt. The bot works directly in your Discord server
-          with no need to download any additional applications or software.
-        </p>
-        <p>
-          For detailed setup instructions, check out our{" "}
-          <a href="/quick-start-guide">Quick Start Guide</a>.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "What types of content can the Discord bot generate?",
-    answer:
-      "Our Discord bot can generate a wide variety of AI-powered content including text responses, creative writing, code snippets, summaries, translations, and more. Simply describe what you need in your prompt and the bot will generate relevant content based on your request. The bot supports multiple content formats and can adapt to different writing styles and tones.",
-  },
-  {
-    question: "How do I use the bot's slash commands effectively?",
-    answer: (
-      <>
-        <p>
-          Our bot uses Discord's slash command system for easy interaction. Here
-          are the main commands:
-        </p>
-        <ul>
-          <li>
-            <code>/generate [prompt]</code> - Generate AI content based on your
-            prompt
-          </li>
-          <li>
-            <code>/help</code> - Display available commands and usage tips
-          </li>
-          <li>
-            <code>/settings</code> - Adjust bot preferences for your server
-          </li>
-        </ul>
-        <p>
-          For comprehensive command documentation, visit our{" "}
-          <a href="/docs/prompting-guide">Prompting Guide</a>.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "Can I use the Discord bot for commercial purposes?",
-    answer:
-      "Yes! Our Discord bot can be used for commercial projects and business purposes. However, usage terms may vary depending on your subscription plan. Free tier users have certain limitations, while Premium and Enterprise users enjoy expanded commercial usage rights. Please review our Terms of Service for specific details about commercial usage rights for your plan.",
-  },
-];
+## Getting Started
 
-<FAQStructuredData faqs={generalUsageFaqs} title="General Usage" />
+**Q: Which AI tool should I start with?**
+
+If you use Google Workspace heavily, start with Gemini. For document analysis and writing, start with Claude. Both are recommended -- see [Your AI Toolkit](/your-ai-toolkit).
+
+**Q: How much do these tools cost?**
+
+Claude Pro is $20/month, Team is $30/month. Gemini Advanced is $25.99/month (included with some Google Workspace plans). Free tiers exist but are limited for professional use.
+
+**Q: Do I need technical skills?**
+
+No. This training is designed for executives of all technical levels. The prompting and context management sections require zero coding.
+
+**Q: How long until I see results?**
+
+Most executives see time savings within the first week using the [quick wins](/getting-started#quick-wins-by-role) in the Getting Started guide.
 
 ---
 
-export const billingFaqs = [
-  {
-    question: "How does PODgram.ai's credit system work?",
-    answer: (
-      <>
-        <p>
-          PODgram.ai uses a simple pay-as-you-go credit system with no
-          subscriptions or monthly commitments! Each service (like image
-          generation, background removal, or vectorization) costs a small amount
-          of credits per use. You simply add credits to your account when you
-          need them and use them as you create.
-        </p>
-        <p>
-          New users start with <strong>$2 in free credits</strong> to explore
-          all our features. After that, you can add any amount you'd like
-          whenever you need more. Check out our{" "}
-          <a href="/plans">Plans & Pricing</a> page for detailed pricing on each
-          service.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "Do my credits expire?",
-    answer:
-      "No! Your credits never expire. There are no monthly resets, no rollover limits, and no time pressure to use them. Add credits whenever you want and use them at your own pace. This means you have complete control over your spending with no wasted money on unused subscription time.",
-  },
-  {
-    question: "How do I add more credits to my account?",
-    answer: (
-      <>
-        <p>
-          Adding credits is quick and easy! Just use the <code>/balance</code>{" "}
-          command in Discord, choose how much you'd like to add (we offer preset
-          amounts of $10, $25, and $50, plus a custom amount option), then click
-          "Pay with Stripe" to complete your secure checkout.
-        </p>
-        <p>
-          Once your payment is processed, you'll receive a confirmation message
-          in Discord and your credits will be available immediately. For a
-          step-by-step guide with screenshots, visit our{" "}
-          <a href="/plans">Plans & Pricing</a> page.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "Can I get a refund on purchased credits?",
-    answer: (
-      <>
-        <p>
-          We offer refunds on a case-by-case basis for unused credits. If you're
-          not satisfied with PODgram.ai or made a purchase by mistake, please
-          contact our <a href="/support">support team</a> as soon as possible.
-          We're happy to help!
-        </p>
-        <p>
-          Please note that credits that have already been used for generating
-          images or other services cannot be refunded, as these represent actual
-          API costs we've incurred on your behalf.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "Where can I view my purchase history and receipts?",
-    answer: (
-      <>
-        <p>
-          All credit purchases are processed through Stripe, and you'll receive
-          email receipts for every transaction. You can also view your payment
-          history and download invoices through your Stripe customer portal.
-        </p>
-        <p>
-          To check your current credit balance at any time, simply run the{" "}
-          <code>/balance</code> command in Discord. If you need help accessing
-          your receipts or have billing questions, our{" "}
-          <a href="/support">support team</a> is here to assist you.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "What happens if I run out of credits?",
-    answer:
-      "If your credit balance reaches zero, you won't be able to use PODgram.ai's services until you add more credits. Don't worry though - all your previously generated content remains accessible in your Discord server, and your account stays active. Simply add more credits using the /balance command whenever you're ready to continue creating!",
-  },
-  {
-    question: "Are there any hidden fees or recurring charges?",
-    answer:
-      "Absolutely not! PODgram.ai has no subscriptions, no monthly fees, and no recurring charges. You only pay when you choose to add credits to your account. There are no surprise bills, no auto-renewals, and no commitments. You're always in complete control of your spending.",
-  },
-  {
-    question: "How do I check my current credit balance?",
-    answer: (
-      <>
-        <p>
-          Checking your balance is simple! Just use the <code>/balance</code>{" "}
-          command in any Discord channel where PODgram.ai is available. You'll
-          see your current credit balance displayed, along with quick buttons to
-          add more credits if needed.
-        </p>
-        <p>
-          You can check your balance as often as you like - there's no limit or
-          cost to using the <code>/balance</code> command.
-        </p>
-      </>
-    ),
-  },
-];
+## Privacy and Security
 
-<FAQStructuredData faqs={billingFaqs} title="Billing" />
+**Q: Can I use patient data with AI tools?**
+
+Never with consumer tools. Only enterprise plans with signed BAAs. See [Data Classification](/governance/data-classification) for the 4-tier framework.
+
+**Q: What tools are approved for PurposeMed?**
+
+Your AI Governance Committee will maintain the approved list. See [Shadow AI and Approved Tools](/governance/shadow-ai-and-approved-tools).
+
+**Q: What is a BAA and why does it matter?**
+
+A Business Associate Agreement is a legal contract required under HIPAA when a vendor handles PHI. Without one, using the tool with patient data violates federal law. See [Patient Data and Compliance](/governance/patient-data-and-compliance).
+
+**Q: What if I accidentally entered patient data into a consumer AI tool?**
+
+Report it immediately to your privacy officer. Document what was shared, when, and which tool was used. The vendor's data retention policy determines the scope of exposure. This is why approved tools and training matter -- prevention is far easier than remediation.
+
+**Q: How do PIPEDA and HIPAA apply to AI use?**
+
+Both require safeguards when processing personal health information. PurposeMed operates across jurisdictions, so you must meet the strictest applicable standard. See [Patient Data and Compliance](/governance/patient-data-and-compliance).
 
 ---
 
-## Need More Help?
+## Prompting and Usage
 
-Can't find what you're looking for? We're here to help!
+**Q: Why does AI sometimes give wrong answers?**
 
-- 📚 Browse our comprehensive [Documentation](/)
-- 💬 Join our [Community Discord](https://discord.gg/hfEahVFSzn)
-- 📧 Contact our [Support Team](/support)
-- 🚀 Check out our [Quick Start Guide](/quick-start-guide)
+AI models can hallucinate -- generating plausible but incorrect information. Always verify outputs, especially for clinical and regulatory content. See [Fact-Checking AI Outputs](/research-and-content/fact-checking).
+
+**Q: How do I get better results from my prompts?**
+
+Use the four-component formula: Persona, Task, Context, Format. See [Anatomy of a Great Prompt](/prompting/anatomy-of-a-great-prompt).
+
+**Q: Can AI write clinical documentation?**
+
+AI can draft templates and assist with documentation, but all clinical content must be reviewed by qualified clinicians before use. AI is a drafting tool, not a clinical authority.
+
+---
+
+## Automation
+
+**Q: What can be automated vs. what needs human oversight?**
+
+Routine tasks (email summaries, data formatting, report drafting) are ideal for automation. Anything involving patient decisions, clinical judgment, or regulatory filings requires human oversight. See [Automation by Function](/automation/automation-by-function).
+
+**Q: Do I need to know how to code?**
+
+No. Platforms like Zapier and Google Workspace Studio are no-code. n8n is low-code. Claude can build simple tools for you -- see [Building Simple Tools](/automation/building-simple-tools).
+
+**Q: What is MCP and do I need it?**
+
+Model Context Protocol connects AI to your data sources (Slack, databases, Google Drive). It is optional for beginners but powerful for advanced workflows. See [MCP Connections](/automation/mcp-connections).
+
+---
+
+<FAQStructuredData
+  faqs={[
+    {
+      question: "Which AI tool should I start with?",
+      answer: "If you use Google Workspace heavily, start with Gemini. For document analysis and writing, start with Claude. Both are recommended."
+    },
+    {
+      question: "How much do these tools cost?",
+      answer: "Claude Pro is $20/month, Team is $30/month. Gemini Advanced is $25.99/month (included with some Google Workspace plans). Free tiers exist but are limited for professional use."
+    },
+    {
+      question: "Do I need technical skills?",
+      answer: "No. This training is designed for executives of all technical levels. The prompting and context management sections require zero coding."
+    },
+    {
+      question: "How long until I see results?",
+      answer: "Most executives see time savings within the first week using the quick wins in the Getting Started guide."
+    },
+    {
+      question: "Can I use patient data with AI tools?",
+      answer: "Never with consumer tools. Only enterprise plans with signed BAAs. See the Data Classification guide for the 4-tier framework."
+    },
+    {
+      question: "What tools are approved for PurposeMed?",
+      answer: "Your AI Governance Committee will maintain the approved list. See the Shadow AI and Approved Tools guide."
+    },
+    {
+      question: "What is a BAA and why does it matter?",
+      answer: "A Business Associate Agreement is a legal contract required under HIPAA when a vendor handles PHI. Without one, using the tool with patient data violates federal law."
+    },
+    {
+      question: "What if I accidentally entered patient data into a consumer AI tool?",
+      answer: "Report it immediately to your privacy officer. Document what was shared, when, and which tool was used. The vendor's data retention policy determines the scope of exposure."
+    },
+    {
+      question: "How do PIPEDA and HIPAA apply to AI use?",
+      answer: "Both require safeguards when processing personal health information. PurposeMed operates across jurisdictions, so you must meet the strictest applicable standard."
+    },
+    {
+      question: "Why does AI sometimes give wrong answers?",
+      answer: "AI models can hallucinate — generating plausible but incorrect information. Always verify outputs, especially for clinical and regulatory content."
+    },
+    {
+      question: "How do I get better results from my prompts?",
+      answer: "Use the four-component formula: Persona, Task, Context, Format. See the Anatomy of a Great Prompt guide."
+    },
+    {
+      question: "Can AI write clinical documentation?",
+      answer: "AI can draft templates and assist with documentation, but all clinical content must be reviewed by qualified clinicians before use."
+    },
+    {
+      question: "What can be automated vs. what needs human oversight?",
+      answer: "Routine tasks (email summaries, data formatting, report drafting) are ideal for automation. Anything involving patient decisions, clinical judgment, or regulatory filings requires human oversight."
+    },
+    {
+      question: "Do I need to know how to code?",
+      answer: "No. Platforms like Zapier and Google Workspace Studio are no-code. n8n is low-code. Claude can build simple tools for you."
+    },
+    {
+      question: "What is MCP and do I need it?",
+      answer: "Model Context Protocol connects AI to your data sources (Slack, databases, Google Drive). It is optional for beginners but powerful for advanced workflows."
+    }
+  ]}
+/>

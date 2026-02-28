@@ -18,21 +18,21 @@ Replace the placeholder values in `docusaurus.config.ts`:
 // Replace YOUR_GITHUB_USERNAME with your actual GitHub username or organization
 url: 'https://ximxim.github.io',
 organizationName: 'ximxim',
-editUrl: 'https://github.com/ximxim/podgram-docs/tree/main/',
+editUrl: 'https://github.com/ximxim/WorkflowyOS-Docs/tree/main/',
 ```
 
 **Example:** If your GitHub username is `ximxim`, update these to:
 ```typescript
 url: 'https://ximxim.github.io',
 organizationName: 'ximxim',
-editUrl: 'https://github.com/ximxim/podgram-docs/tree/main/',
+editUrl: 'https://github.com/ximxim/WorkflowyOS-Docs/tree/main/',
 ```
 
 ### 2. Enable GitHub Pages in Your Repository
 
 1. **Push your changes to GitHub** (if you haven't already)
 2. **Go to your repository settings**:
-   - Navigate to `https://github.com/ximxim/podgram-docs/settings`
+   - Navigate to `https://github.com/ximxim/WorkflowyOS-Docs/settings`
 3. **Configure GitHub Pages**:
    - Scroll down to "Pages" in the left sidebar
    - Under "Source", select **"GitHub Actions"**
@@ -60,16 +60,16 @@ Ensure your repository has the correct permissions for GitHub Actions:
 
 After successful deployment, your site will be available at:
 ```
-https://YOUR_GITHUB_USERNAME.github.io/pod-designer-docs/
+https://ximxim.github.io/WorkflowyOS-Docs/
 ```
 
 ## 🔍 Monitoring Deployments
 
-- **GitHub Actions Tab**: Monitor workflow runs at `https://github.com/ximxim/podgram-docs/actions`
+- **GitHub Actions Tab**: Monitor workflow runs at `https://github.com/ximxim/WorkflowyOS-Docs/actions`
 - **Pages Settings**: Check deployment status in repository Settings > Pages
 - **Workflow Badge**: Add this to your README to show deployment status:
   ```markdown
-  ![Deploy to GitHub Pages](https://github.com/ximxim/podgram-docs/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+  ![Deploy to GitHub Pages](https://github.com/ximxim/WorkflowyOS-Docs/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
   ```
 
 ## 🛠️ Troubleshooting
