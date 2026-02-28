@@ -9,6 +9,27 @@ Proving the value of AI investments requires more than anecdotal wins. You need 
 
 ## The Four-Domain ROI Framework
 
+```mermaid
+mindmap
+  root("AI ROI\nFramework")
+    Clinical
+      Provider Efficiency
+      Care Quality
+      Documentation Time
+    Operational
+      Throughput
+      Utilization
+      Process Cycle Time
+    Population Safety
+      Bias Monitoring
+      Equity Metrics
+      Outcome Disparities
+    Financial
+      Cost Savings
+      Revenue Impact
+      ROI Ratio
+```
+
 Effective AI measurement spans four interconnected domains. Tracking only one (typically cost savings) gives you an incomplete and often misleading picture.
 
 ### 1. Clinical Impact

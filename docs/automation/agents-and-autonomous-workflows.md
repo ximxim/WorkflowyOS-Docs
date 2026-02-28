@@ -12,6 +12,16 @@ Everything covered so far in this training -- prompting, context management, res
 
 ## The Three Levels of AI Capability
 
+```mermaid
+flowchart LR
+    A["Level 1\n💬 Simple Chat"] --> B["Level 2\n📁 Custom Projects"]
+    B --> C["Level 3\n🤖 Autonomous Agents"]
+
+    A1["You type\nAI responds"] -.-> A
+    B1["Persistent context\nKnowledge base"] -.-> B
+    C1["AI takes actions\nUses tools independently"] -.-> C
+```
+
 Understanding where agents sit in the broader landscape helps you see what is already possible and what is coming next.
 
 ### Level 1: Simple Chat
@@ -93,6 +103,23 @@ Your team can use Claude Code with subagents for code review, automated test gen
 ---
 
 ## Implementation Roadmap
+
+```mermaid
+timeline
+    title Agent Implementation Roadmap
+    section Phase 1 - Foundation
+        Month 1 : Master prompting
+                : Set up Projects and Gems
+    section Phase 2 - Automation
+        Month 2-3 : Build department workflows
+                  : Connect tools via MCP
+    section Phase 3 - Agents
+        Month 3-5 : Deploy first autonomous agents
+                  : Monitor and refine
+    section Phase 4 - Scale
+        Month 5+ : Cross-department agents
+                 : Advanced orchestration
+```
 
 Adopting agents is not an all-or-nothing decision. Here is a phased approach that builds on the skills you are developing in this training.
 

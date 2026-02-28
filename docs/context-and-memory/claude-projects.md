@@ -36,6 +36,17 @@ Think of it as giving Claude a permanent briefing document rather than re-briefi
 
 ## Step-by-Step Setup
 
+```mermaid
+flowchart TD
+    A["Step 1:\nCreate New Project"] --> B["Step 2:\nAdd Custom Instructions"]
+    B --> C["Step 3:\nUpload Knowledge Base"]
+    C --> D["Step 4:\nStart Conversations"]
+    D --> E{"Conversation\ngetting long?"}
+    E -->|Yes| F["Start new conversation\nin same project"]
+    E -->|No| G["Continue working"]
+    F --> D
+```
+
 ### Step 1: Create a New Project
 
 1. Navigate to [claude.ai](https://claude.ai)
@@ -99,6 +110,22 @@ Create separate projects for distinct use cases rather than one giant project. A
 ---
 
 ## Context Window
+
+```mermaid
+flowchart TD
+    subgraph Project["Claude Project - 200K Token Budget"]
+        A["Custom Instructions\n~500-2,000 tokens"]
+        B["Knowledge Base Documents\nBulk of budget"]
+        C["Current Conversation\nGrows as you chat"]
+    end
+    A --> D["Every conversation\ninherits instructions"]
+    B --> D
+    D --> C
+    C --> E{"Running low\non tokens?"}
+    E -->|Yes| F["Start new conversation\nResets conversation tokens"]
+    E -->|No| G["Keep chatting"]
+    F --> D
+```
 
 Claude Projects operate within a 200,000-token context window. This includes your custom instructions, uploaded documents, and the current conversation. In practical terms:
 

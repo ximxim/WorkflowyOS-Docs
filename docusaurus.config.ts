@@ -26,6 +26,10 @@ const config: Config = {
   // GitHub Pages adds a trailing slash by default that we need to customize
   trailingSlash: false,
 
+  markdown: {
+    mermaid: true,
+  },
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -84,6 +88,7 @@ const config: Config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */

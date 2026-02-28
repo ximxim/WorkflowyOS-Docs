@@ -13,6 +13,17 @@ Workflow automation was the most requested topic in the PurposeMed AI readiness 
 
 You do not need to pick just one platform. The strongest approach is to use the right tool for the right job. Here is how the three most relevant options compare.
 
+```mermaid
+flowchart TD
+    A["What do you need?"] --> B{"Many third-party\napp integrations?"}
+    B -->|Yes| C["Zapier\n• 6,000+ apps\n• No-code\n• Quick setup"]
+    B -->|No| D{"Self-hosted +\ncompliance control?"}
+    D -->|Yes| E["n8n\n• Self-hosted option\n• Healthcare compliance\n• Custom logic"]
+    D -->|No| F{"Already in Google\nWorkspace?"}
+    F -->|Yes| G["Google Apps Script\n• Native integration\n• Free with Workspace\n• Familiar environment"]
+    F -->|No| E
+```
+
 | Feature | n8n | Zapier | Google Workspace Studio |
 |---------|-----|--------|------------------------|
 | **AI capability** | Strongest (native LangChain, RAG, vector stores) | Good (built-in AI actions) | Good (Gemini-native) |
@@ -33,6 +44,13 @@ n8n's self-hosted deployment means your data never leaves your infrastructure. F
 ---
 
 ## Quick Wins That Deliver Immediate ROI
+
+```mermaid
+flowchart LR
+    A["⏰ Daily\nSchedule"] --> B["📥 Pull emails\nand Slack messages"]
+    B --> C["🤖 AI summarizes\nkey points"]
+    C --> D["📧 Deliver digest\nto inbox"]
+```
 
 Before diving into department-specific workflows, start here. These four automations are fast to build, easy to maintain, and save meaningful time from day one.
 
@@ -341,6 +359,23 @@ Schedule (daily)
 ---
 
 ## Implementation Roadmap
+
+```mermaid
+timeline
+    title Automation Implementation Roadmap
+    section Phase 1 - Quick Wins
+        Week 1-2 : Email digests
+                 : Meeting summaries
+                 : Template generation
+    section Phase 2 - Department Specific
+        Week 3-6 : Role-based workflows
+                 : Reporting automation
+                 : Approval routing
+    section Phase 3 - Advanced
+        Month 2-3 : Cross-department flows
+                  : AI agent integration
+                  : Custom dashboards
+```
 
 You do not need to build everything at once. Here is a phased approach.
 

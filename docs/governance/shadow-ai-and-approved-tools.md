@@ -122,6 +122,19 @@ Effective AI governance requires a standing committee with the authority to eval
 
 ### Five-Step Risk Assessment Process
 
+```mermaid
+flowchart TD
+    A["🆕 New AI Tool\nRequest"] --> B["1. Document\nUse Case"]
+    B --> C["2. Vendor\nSecurity Review"]
+    C --> D["3. Privacy Impact\nAssessment"]
+    D --> E["4. Workflow\nValidation"]
+    E --> F{"5. Decision"}
+    F -->|Approved| G["✅ Approved\nwith conditions"]
+    F -->|Denied| H["❌ Denied\nAlternative recommended"]
+    G --> I["📅 Quarterly\nReview Cycle"]
+    I --> C
+```
+
 When a new AI tool is proposed for use at PurposeMed, the governance committee follows this assessment process:
 
 **Step 1: Use Case Documentation**

@@ -8,6 +8,16 @@ hide_table_of_contents: true
 
 Claude can create more than text responses. With Artifacts, you can generate interactive presentations, data visualizations, dashboards, and downloadable documents -- all within the conversation. This section covers how to use these capabilities to produce the materials your team creates regularly.
 
+```mermaid
+flowchart LR
+    A["Describe what\nyou need"] --> B["AI generates\nartifact"]
+    B --> C["Review &\ntest"]
+    C --> D{"Needs\nchanges?"}
+    D -->|Yes| E["Iterate with\nfeedback"]
+    E --> B
+    D -->|No| F["Share or\npublish"]
+```
+
 ---
 
 ## Creating Presentations

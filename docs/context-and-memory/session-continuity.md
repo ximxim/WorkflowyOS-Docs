@@ -117,6 +117,19 @@ Not every prompt belongs in the library. Save prompts that:
 
 ## When to Start Fresh vs. Continue
 
+```mermaid
+flowchart TD
+    A["Current Conversation"] --> B{"Getting accurate\nresults?"}
+    B -->|Yes| C{"Staying on\nsame topic?"}
+    C -->|Yes| D["✅ Continue"]
+    C -->|No| E["🔄 Start fresh"]
+    B -->|No| F{"Errors\naccumulating?"}
+    F -->|Yes| G["🔄 Start fresh\nwith handoff summary"]
+    F -->|No| H{"Past 15+\nturns?"}
+    H -->|Yes| G
+    H -->|No| D
+```
+
 Not every conversation should be continued. Sometimes starting a new conversation produces better results.
 
 ### Start a New Conversation When:

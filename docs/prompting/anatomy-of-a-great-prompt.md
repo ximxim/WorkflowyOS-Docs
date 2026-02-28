@@ -20,6 +20,18 @@ Every high-quality prompt contains four components. You do not need to label the
 | **Context** | Provides the background the AI needs | "PurposeMed operates telehealth services across Canadian provinces (Freddie for HIV/PrEP, Frida for ADHD, Foria for gender-affirming care)." |
 | **Format** | Describes how the output should look | "Return a table with columns: Requirement, Current Status, Gap, Recommendation." |
 
+```mermaid
+flowchart TD
+    A["Start Your Prompt"] --> B["1. Persona\nWho is the AI?"]
+    B --> C["2. Task\nWhat should it do?"]
+    C --> D["3. Context\nWhat background info?"]
+    D --> E["4. Format\nHow should output look?"]
+    E --> F["Complete Prompt\nReady to Send"]
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+    style F fill:#1a1a2e,stroke:#0f3460,color:#fff
+```
+
 ### Before and After
 
 **Vague prompt:**
@@ -53,6 +65,16 @@ The structured version produces a draft you can actually send with light editing
 ---
 
 ## Chain-of-Thought Prompting
+
+```mermaid
+flowchart LR
+    A["Level 1\nBasic"] --> B["Level 2\nGuided"]
+    B --> C["Level 3\nStructured"]
+
+    A1["'Think step-by-step\nbefore answering'"] -.-> A
+    B1["Specify the 5 steps\nyou want AI to follow"] -.-> B
+    C1["Break into labeled\n## Step sections"] -.-> C
+```
 
 When you need the AI to reason through a complex problem rather than jump to a conclusion, ask it to show its work. There are three levels of chain-of-thought prompting.
 

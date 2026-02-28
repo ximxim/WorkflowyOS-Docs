@@ -19,6 +19,16 @@ If your AI pilot has been running for more than 90 days without a concrete scale
 
 ## Three Organizational Archetypes
 
+```mermaid
+flowchart LR
+    A["🐢 Followers\nWait for proven ROI\nMinimal risk"] --> B["🧪 Experimenters\nPilot programs\nSelected teams"]
+    B --> C["🚀 Transformers\nAI-native workflows\nOrg-wide adoption"]
+
+    style A fill:#1a1a2e,stroke:#ff6b6b,color:#fff
+    style B fill:#1a1a2e,stroke:#ffd93d,color:#fff
+    style C fill:#1a1a2e,stroke:#6bcb77,color:#fff
+```
+
 The Chartis Group identifies three archetypes for healthcare organizations adopting AI. Understanding where you sit today helps you plan where to go.
 
 ### Followers (Shrinking to ~10% of Organizations)
@@ -84,6 +94,21 @@ Create a direct link between AI-driven efficiency and individual benefit. For ex
 Dedicate regular time -- monthly or quarterly -- for teams to explore new AI applications, test workflow improvements, and share findings across departments. Structured experimentation time signals that leadership values continuous improvement, not just compliance with current processes.
 
 ## Overcoming Common Resistance Patterns
+
+```mermaid
+flowchart TD
+    A["Resistance\nEncountered"] --> B{"What is the\nroot concern?"}
+    B --> C["'AI will replace me'"]
+    B --> D["'Too busy to learn'"]
+    B --> E["'AI makes mistakes'"]
+    B --> F["'We just did\na big change'"]
+    B --> G["'Patients won't\ntrust it'"]
+    C --> C1["Show AI as\naugmentation tool"]
+    D --> D1["Start with 5-min\nquick wins"]
+    E --> E1["Teach verification\nworkflows"]
+    F --> F1["Position as evolution\nnot revolution"]
+    G --> G1["Show AI stays\nbehind the scenes"]
+```
 
 | Resistance Pattern | Root Cause | Response |
 |---|---|---|

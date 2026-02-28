@@ -8,6 +8,15 @@ hide_table_of_contents: true
 
 AI research tools have moved far beyond simple web searches. You can now conduct multi-source investigations that synthesize dozens of sources into structured analysis -- the kind of work that previously took an analyst a full day. This section covers the two most powerful research tools available to your team and when to use each one.
 
+```mermaid
+flowchart TD
+    A["What kind of research?"] --> B{"Need deep reasoning\non few sources?"}
+    B -->|Yes| C["Claude Research\n• Iterative analysis\n• Step-by-step reasoning\n• Focused depth"]
+    B -->|No| D{"Need broad survey\nof many sources?"}
+    D -->|Yes| E["Gemini Deep Research\n• 100+ sources\n• Comprehensive coverage\n• Audio overview"]
+    D -->|No| F["Start with either\nand iterate"]
+```
+
 ---
 
 ## Claude Research Mode

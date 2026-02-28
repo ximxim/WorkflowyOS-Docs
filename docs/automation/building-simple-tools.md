@@ -8,6 +8,21 @@ hide_table_of_contents: true
 
 In PurposeMed's team survey, 4 of 9 respondents expressed interest in building prototypes and simple tools with AI. Lindsay specifically wants to build functioning product features and replace Google Sheets with purpose-built tools. The good news: you can start doing this today without writing a single line of code yourself.
 
+```mermaid
+flowchart TD
+    A["📝 Describe what\nyou need"] --> B["🤖 AI builds\ninteractive prototype"]
+    B --> C["🧪 Test it\nyourself"]
+    C --> D{"Needs\nchanges?"}
+    D -->|Yes| E["💬 Tell AI\nwhat to change"]
+    E --> B
+    D -->|No| F{"Good enough\nfor team?"}
+    F -->|Yes| G["📤 Share for\nfeedback"]
+    F -->|No| C
+    G --> H{"Worth\nproduction build?"}
+    H -->|Yes| I["🏗️ Invest in\nproduction version"]
+    H -->|No| J["✅ Keep using\nas prototype"]
+```
+
 ---
 
 ## From Spreadsheet to App

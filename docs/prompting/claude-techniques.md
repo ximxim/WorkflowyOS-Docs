@@ -7,6 +7,17 @@ title: "Claude-Specific Techniques"
 
 Claude (by Anthropic) is one of PurposeMed's primary AI tools. While the [general prompting formula](/prompting/anatomy-of-a-great-prompt) applies to any model, Claude has specific behaviors and features that you can leverage for better results.
 
+```mermaid
+flowchart TD
+    A["How complex is your prompt?"] --> B{"Under 50 words?"}
+    B -->|Yes| C["Be precise & direct\n→ Technique 1"]
+    B -->|No| D{"50-200 words?"}
+    D -->|Yes| E["Explain the WHY\n+ Contract-style\n→ Techniques 2, 6"]
+    D -->|No| F{"200+ words?"}
+    F -->|Yes| G["Use XML tags\n+ Document-first\n→ Techniques 3, 4"]
+    F -->|No| H["Deep analysis needed?\nTrigger Extended Thinking\n→ Technique 5"]
+```
+
 ---
 
 ## Claude Follows Instructions Precisely
@@ -84,6 +95,20 @@ Use XML tags when your prompt exceeds roughly 200 words, when you are including 
 ---
 
 ## Document Placement Matters
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant C as Claude
+    Note over U,C: Recommended Order
+    U->>C: Long document (policy, report)
+    U->>C: Your questions & instructions
+    C->>U: High-quality analysis
+    Note over U,C: Less Effective Order
+    U->>C: Questions first
+    U->>C: Then the document
+    C->>U: Lower quality analysis
+```
 
 When you include long documents in your prompt (policies, reports, meeting transcripts), place them at the **top** of the prompt and your questions or instructions at the **end**. Research shows this ordering improves output quality by roughly 30% compared to putting questions first.
 

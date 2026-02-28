@@ -11,6 +11,25 @@ These are ready-to-use prompts mapped to the actual functions represented on Pur
 Never include actual patient data in any prompt. Use de-identified, aggregated, or synthetic data for all AI interactions. See the [Governance](/governance/patient-data-and-compliance) section for detailed requirements.
 :::
 
+```mermaid
+mindmap
+  root("Healthcare Prompt Scenarios")
+    Executive
+      Quarterly Metrics Review
+    Chief of Staff
+      Internal Communications
+    HR
+      Hiring Pipeline
+    Finance
+      Budget Variance
+    Marketing
+      Funnel Analysis
+    Operations
+      Prior Authorization
+    Product/Eng
+      Code Review
+```
+
 ---
 
 ## Executive Strategy -- Quarterly Metrics Review

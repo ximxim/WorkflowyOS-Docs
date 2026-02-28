@@ -52,6 +52,17 @@ Consumer plans for ChatGPT, Claude, and Gemini do not offer Business Associate A
 
 ## The Golden Rule
 
+```mermaid
+flowchart TD
+    A["Data you want to\nenter into AI tool"] --> B{"Contains patient\ninformation?"}
+    B -->|No| C["✅ Proceed\nFollow internal policies"]
+    B -->|Yes| D{"Tool has signed\nBAA/DPA?"}
+    D -->|No| E["🛑 STOP\nDo NOT enter the data"]
+    D -->|Yes| F{"Data is\nde-identified?"}
+    F -->|Yes| G["✅ Proceed\nwith caution"]
+    F -->|No| H["⚠️ De-identify first\nthen proceed"]
+```
+
 If you remember only one thing from this entire training program, make it this:
 
 > **When in doubt, do not enter the data.**

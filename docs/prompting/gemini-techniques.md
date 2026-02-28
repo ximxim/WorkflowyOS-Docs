@@ -7,6 +7,17 @@ title: "Gemini-Specific Techniques"
 
 Gemini (by Google) is PurposeMed's other primary AI tool, and it brings a distinct set of strengths. If you are already using Google Workspace for documents, spreadsheets, and slides, Gemini's native integration makes it particularly powerful for tasks that involve your existing files.
 
+```mermaid
+flowchart TD
+    A["What are you working with?"] --> B{"Google Drive files?"}
+    B -->|Yes| C["Use @ references\n→ Technique 4"]
+    B -->|No| D{"Images, video,\nor audio?"}
+    D -->|Yes| E["Use multimodal prompts\n→ Technique 3"]
+    D -->|No| F{"Long conversation\nin progress?"}
+    F -->|Yes| G["Monitor for drift\nRestart after 15 turns\n→ Technique 6"]
+    F -->|No| H["Be precise and direct\n→ Technique 1"]
+```
+
 ---
 
 ## Be Precise and Direct
@@ -130,6 +141,21 @@ Both work well. Mixing them in one prompt does not.
 ---
 
 ## Multi-Turn Conversation Strengths
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant G as Gemini
+    U->>G: Turn 1: Set persona + upload data
+    G->>U: Initial analysis ready
+    U->>G: Turn 2: Drill into specifics
+    G->>U: Detailed breakdown
+    U->>G: Turn 5: Follow-up question
+    G->>U: Contextual response
+    Note over U,G: Turns 10-15: Watch for drift
+    U->>G: Turn 15+: Context may degrade
+    Note over U,G: Start fresh conversation
+```
 
 Gemini maintains context effectively across multiple turns in a conversation. This means you can build on previous responses without repeating your constraints or background information.
 

@@ -13,6 +13,17 @@ This walkthrough gets you from zero to productive with AI in a single sitting. B
 
 ## Step 1: Choose Your Tool
 
+```mermaid
+flowchart TD
+    A["What is your primary task?"] --> B{"Working with\nGoogle Workspace?"}
+    B -->|Yes| C["Use Gemini"]
+    B -->|No| D{"Need deep analysis\nor long documents?"}
+    D -->|Yes| E["Use Claude"]
+    D -->|No| F{"Need real-time\nweb research?"}
+    F -->|Yes| C
+    F -->|No| E
+```
+
 You do not need to pick just one -- most of your team already uses multiple AI tools. Here is when to reach for each:
 
 - **Claude** (by Anthropic) -- Best for analysis, writing, coding, and reasoning through complex problems. Handles long documents well. Use this when you need to draft a policy, analyze a report, or work through a multi-step problem.
@@ -64,6 +75,18 @@ Notice what the good prompt includes: a **role** for the AI, **context** about P
 ---
 
 ## Step 3: Evaluate and Iterate
+
+```mermaid
+flowchart TD
+    A["Review AI Output"] --> B["Check Accuracy"]
+    B --> C["Check Completeness"]
+    C --> D["Check Tone"]
+    D --> E{"Overall quality\n70% or better?"}
+    E -->|Yes| F["Iterate on\nweak sections"]
+    E -->|No| G["Start fresh with\nimproved prompt"]
+    F --> H["Final Output"]
+    G --> A
+```
 
 Your first output is a draft, not a final product. Here is how to assess what you get back:
 

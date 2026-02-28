@@ -89,6 +89,17 @@ Even with Tier 4 data, exercise professional judgment. If your prompt provides c
 
 ## Quick Decision Flow
 
+```mermaid
+flowchart TD
+    A["What type of data\ndo you have?"] --> B{"Contains direct\npatient identifiers?"}
+    B -->|Yes| C["🔴 Tier 1: Prohibited\nNo AI tools allowed"]
+    B -->|No| D{"Contains clinical\nor health info?"}
+    D -->|Yes| E["🟠 Tier 2: Restricted\nEnterprise AI with BAA only"]
+    D -->|No| F{"Internal\nbusiness data?"}
+    F -->|Yes| G["🟡 Tier 3: Internal\nApproved AI tools"]
+    F -->|No| H["🟢 Tier 4: Open\nAny AI tool"]
+```
+
 Before entering any data into an AI tool, walk through these four questions in order:
 
 **Step 1: Does the data contain ANY patient identifiers?**
@@ -110,6 +121,16 @@ When in doubt, treat data as Tier 1 (Prohibited). It is always safer to over-pro
 ---
 
 ## De-Identification Techniques
+
+```mermaid
+flowchart LR
+    A["🔴 Tier 1 Data\nWith identifiers"] --> B["Remove 18 HIPAA\nidentifiers"]
+    B --> C{"Method?"}
+    C --> D["Safe Harbor\nRemove all 18 types"]
+    C --> E["Expert Determination\nStatistical verification"]
+    D --> F["🟠 Tier 2 Data\nCan use with\nenterprise AI"]
+    E --> F
+```
 
 When you need to use clinical data with AI tools, proper de-identification is your bridge between Tier 1 (off-limits) and Tier 2 (usable with BAA-covered tools). Two recognized methods exist under HIPAA, and both are accepted practice under PIPEDA.
 

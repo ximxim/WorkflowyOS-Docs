@@ -31,6 +31,19 @@ Never rely on AI alone for clinical guidelines, regulatory interpretations, or l
 
 Lateral reading is the gold standard for fact-checking, used by professional fact-checkers and investigative journalists. Instead of evaluating a claim by staring at it harder, you leave the source and check it against independent references.
 
+```mermaid
+flowchart TD
+    A["AI Output"] --> B["Break into\nindividual claims"]
+    B --> C["Search for independent\nsources per claim"]
+    C --> D["Cross-reference\n2-3 sources"]
+    D --> E["Check cited\nsources exist"]
+    E --> F{"Classification"}
+    F --> G["✅ Verified"]
+    F --> H["⚠️ Plausible\nbut unconfirmed"]
+    F --> I["❓ Unverifiable"]
+    F --> J["❌ Fabricated"]
+```
+
 Here is the process applied to AI outputs:
 
 ### Step 1: Break the Output into Individual Claims

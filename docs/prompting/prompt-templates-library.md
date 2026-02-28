@@ -9,6 +9,23 @@ This is a reference page of copy-paste prompt templates for common tasks across 
 
 Customize the bracketed placeholders with your specific inputs before running any template.
 
+```mermaid
+flowchart TD
+    A["What do you need?"] --> B{"Meeting happened?"}
+    B -->|Yes| C["Template 1:\nMeeting Summary"]
+    B -->|No| D{"Policy or regulation\nto analyze?"}
+    D -->|Yes| E["Template 2:\nPolicy Analysis"]
+    D -->|No| F{"Need to write\nan email?"}
+    F -->|Yes| G["Template 3:\nEmail Drafting"]
+    F -->|No| H{"Have data\nto analyze?"}
+    H -->|Yes| I["Template 4:\nData Analysis"]
+    H -->|No| J{"Formal report\nneeded?"}
+    J -->|Yes| K["Template 5:\nReport Generation"]
+    J -->|No| L{"Patient-facing\nmessage?"}
+    L -->|Yes| M["Template 6:\nPatient Communication"]
+    L -->|No| N["Template 7:\nCompetitive Research"]
+```
+
 ---
 
 ## Meeting Summary Template

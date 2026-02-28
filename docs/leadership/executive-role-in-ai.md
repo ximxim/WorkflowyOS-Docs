@@ -33,6 +33,20 @@ For PurposeMed, this means your leadership team can scale across three service l
 
 ## Telehealth AI Trends to Watch
 
+```mermaid
+flowchart LR
+    subgraph Trends["Telehealth AI Trends"]
+        A["🎙️ Ambient\nDocumentation"]
+        B["🏥 Patient\nTriage AI"]
+        C["📋 Prior Auth\nAutomation"]
+        D["🗣️ Voice AI\nAssistants"]
+    end
+    A --> A1["Reduce documentation\nburden by 50%+"]
+    B --> B1["Route patients to\nright service faster"]
+    C --> C1["Cut PA processing\nfrom days to hours"]
+    D --> D1["Natural language\npatient intake"]
+```
+
 As a healthcare executive, you need to track the AI capabilities that are reshaping telehealth delivery. These four areas have the most immediate relevance to PurposeMed's operations.
 
 ### Ambient Clinical Documentation
@@ -79,6 +93,23 @@ Voice AI for medication adherence reminders in stigma-sensitive care requires ca
 :::
 
 ## Your 90-Day AI Leadership Plan
+
+```mermaid
+timeline
+    title 90-Day AI Leadership Plan
+    section Days 1-7 : Personal Onboarding
+        Set up Claude and Gemini : Complete first real tasks
+        Share experience publicly
+    section Days 8-30 : Team Foundation
+        Launch pilot group : Establish success metrics
+        First training session
+    section Days 31-60 : Expand and Measure
+        Department-wide rollout : Measure initial ROI
+        Share early wins
+    section Days 61-90 : Institutionalize
+        Form governance committee : Publish approved tools list
+        Celebrate successes
+```
 
 This plan gives you a structured path from personal AI adoption to organizational scale. Adapt the timeline to your context, but resist the temptation to skip the early steps -- your credibility as an AI leader depends on your own fluency.
 

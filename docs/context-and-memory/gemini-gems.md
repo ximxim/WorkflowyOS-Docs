@@ -90,6 +90,18 @@ Test your Gem immediately after creation by asking it a question that requires k
 
 ## Key Advantage: Live Google Drive Links
 
+```mermaid
+flowchart LR
+    subgraph live["✅ Live Google Drive Link"]
+        A1["Update Google Doc"] --> B1["Gem auto-references\nlatest version"]
+        B1 --> C1["Always current data"]
+    end
+    subgraph static["⚠️ Direct Upload"]
+        A2["Upload file to Gem"] --> B2["Static snapshot\ntaken at upload"]
+        B2 --> C2["Must re-upload\nto update"]
+    end
+```
+
 One of Gems' most valuable features is that files linked from Google Drive stay synchronized. If you update a Google Doc that is attached to a Gem, the Gem references the updated version automatically.
 
 This is particularly useful for:
@@ -121,6 +133,16 @@ This pulls the referenced files into the conversation context, giving Gemini acc
 ---
 
 ## The Memory Card Technique
+
+```mermaid
+flowchart TD
+    A["📄 Memory Card\nGoogle Doc"] --> B["HR Assistant\nGem"]
+    A --> C["Finance Analyst\nGem"]
+    A --> D["Ops Dashboard\nGem"]
+    A --> E["Marketing Strategist\nGem"]
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+```
 
 For maximum consistency across all your Gems, create a single "Memory Card" document in Google Drive that contains your core company context. Upload this document to every Gem you create.
 

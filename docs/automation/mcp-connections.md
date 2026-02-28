@@ -26,6 +26,20 @@ The key takeaway is that MCP is not an Anthropic-only feature. It is the emergin
 
 ## How MCP Works
 
+```mermaid
+flowchart TD
+    A["👤 You ask Claude\na question"] --> B["Claude Desktop\n(MCP Host)"]
+    B --> C["MCP Client\nrecognizes tool need"]
+    C --> D["MCP Server"]
+    D --> E["🔧 Tools\nActions AI can take"]
+    D --> F["📁 Resources\nData AI can read"]
+    D --> G["💬 Prompts\nTemplates to reuse"]
+    E --> H["Data returned\nto Claude"]
+    F --> H
+    G --> H
+    H --> I["Claude processes\nand responds"]
+```
+
 MCP uses a client-server architecture with three roles:
 
 | Role | What It Does | Example |
@@ -90,6 +104,18 @@ The FHIR MCP server requires the most careful security review of any MCP connect
 ---
 
 ## Setting Up MCP in Claude Desktop
+
+```mermaid
+flowchart TD
+    A["1. Install\nClaude Desktop"] --> B["2. Open Settings\nDeveloper tab"]
+    B --> C["3. Edit config JSON\nAdd server entries"]
+    C --> D["4. Restart\nClaude Desktop"]
+    D --> E["5. Verify connection\nAsk Claude to use a tool"]
+    E --> F{"Working?"}
+    F -->|Yes| G["✅ Ready to use"]
+    F -->|No| H["Check server logs\nand config syntax"]
+    H --> C
+```
 
 Follow these steps to configure MCP servers on your machine.
 
