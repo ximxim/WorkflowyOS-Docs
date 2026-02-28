@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Workflowy.ai',
+  title: 'Purposemed.ai',
   tagline: 'Executive AI Training for PurposeMed',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -108,15 +108,15 @@ const config: Config = {
     },
     image: 'img/docusaurus-social-card.png',
     metadata: [
-      {name: 'keywords', content: 'Workflowy.ai, AI training, PurposeMed, healthcare AI, executive training, Claude, Gemini'},
+      {name: 'keywords', content: 'PurposeMed, AI training, healthcare AI, executive training, Claude, Gemini'},
       {property: 'og:type', content: 'website'},
-      {property: 'og:site_name', content: 'Workflowy.ai Training'},
+      {property: 'og:site_name', content: 'Purposemed.ai Training'},
     ],
     navbar: {
-      title: 'Workflowy.ai',
+      title: 'Purposemed.ai',
       logo: {
-        alt: 'Workflowy.ai Logo',
-        src: 'img/logo.png',
+        alt: 'PurposeMed Logo',
+        src: 'img/logo.svg',
       },
       items: [],
     },
@@ -136,16 +136,8 @@ const config: Config = {
             },
           ],
         },
-        {
-          title: 'Contact',
-          items: [
-            {
-              label: 'Workflowy.ai',
-              href: 'https://workflowy.ai',
-            },
-          ],
-        },
       ],
+      copyright: 'With ❤️ from Workflowy.ai',
     },
     prism: {
       theme: prismThemes.github,
