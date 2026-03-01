@@ -71,6 +71,7 @@ const config: Config = {
           'welcome.mdx',
           'getting-started.mdx',
           'your-ai-toolkit.mdx',
+          'labs/**',
           'prompting/*',
           'context-and-memory/*',
           'research-and-content/*',

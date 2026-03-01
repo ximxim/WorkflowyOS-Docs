@@ -1,0 +1,45 @@
+---
+sidebar_position: 11
+title: "Workforce Capacity Planner"
+description: "A clinician capacity planning tool that visualizes hiring needs, utilization rates, and revenue impact against patient growth."
+---
+
+# Workforce Capacity Planner
+
+Visualize when to hire, how many clinicians you need per quarter, and the revenue impact of each hire -- all pinned to patient growth curves. Configure current headcount, patient volume, utilization targets, and growth rate to see capacity projections across Canada and United States regions.
+
+---
+
+## Requirements
+
+The lab brief calls for a workforce planning tool tailored to HR, Operations, and Finance stakeholders. It should model clinician capacity against patient growth, flag when utilization exceeds targets, project hiring timelines by quarter, and calculate revenue impact per hire. Supports multi-region planning (Canada, United States).
+
+![Workforce Capacity Planner requirements](/img/labs/claude-desktop/workforce-capacity-planner-requirements.png)
+
+---
+
+## Result
+
+The artifact features region tabs (Canada, United States) and a configuration panel with inputs for Current Clinicians (28), Monthly Patient Volume (6,800), Utilization Target (85%), Patients/Clinician/Day (12), and Growth Rate (8%/qtr). Key metrics highlight Current Utilization at 97.1% (flagged red as over target) and Capacity/Clinician at 250 patients. The tool is PIPEDA/PHPA compliant with average salary and revenue/visit context.
+
+![Workforce Capacity Planner result](/img/labs/claude-desktop/workforce-capacity-planner-result.png)
+
+---
+
+## Links
+
+- [View the Claude conversation](https://claude.ai/share/5beea9e1-ab8e-4026-a6b3-29a6e172c032) -- see the full prompt and Claude's reasoning
+- [Open the artifact](https://claude.ai/public/artifacts/a4eddd6e-6980-4310-abd1-3bdcba71ac95) -- interact with the live result
+
+---
+
+## How to Recreate This
+
+1. Gather your current clinician headcount, patient volume, and utilization data
+2. Open [Claude](https://claude.ai) and start a new conversation
+3. Share your workforce data and ask for a capacity planner with hiring timeline projections and revenue impact
+4. Iterate -- add region-specific modeling, specialty breakdowns, or scenario comparison
+
+:::tip
+Workforce capacity planning benefits from providing real operational constraints (utilization targets, revenue per visit, average salaries). Claude can model the math and flag when you'll hit capacity ceilings. See [Automation by Function](/automation/automation-by-function) for more operational automation patterns.
+:::

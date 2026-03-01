@@ -1,0 +1,45 @@
+---
+sidebar_position: 3
+title: "Patient Acquisition Funnel Analyzer"
+description: "A multi-brand funnel analyzer that calculates conversion rates, cost per acquisition, and highlights drop-off points."
+---
+
+# Patient Acquisition Funnel Analyzer
+
+Paste your marketing numbers for each funnel stage and this tool instantly calculates conversion rates, cost per acquisition, and identifies your worst drop-off -- across all three PurposeMed brands (Freddie, Frida, Foria) with a side-by-side comparison view.
+
+---
+
+## Requirements
+
+The lab brief calls for a funnel analysis tool where you input ad spend and stage-by-stage numbers. The analyzer should calculate conversion rates between stages, highlight the worst drop-off point, compute cost per acquisition, and support per-brand filtering with a comparison mode.
+
+![Patient Acquisition Funnel Analyzer requirements](/img/labs/claude-desktop/patient-acquisition-funnel-analyzer-requirements.png)
+
+---
+
+## Result
+
+The artifact features brand tabs (Freddie, Frida, Foria, Compare All), an ad spend input, and a visual funnel with horizontal bars for each stage -- from Ad Impression through Click, Landing Page, and Assessment Started. Red warning badges flag the worst drop-off point with conversion percentage and cost-per-unit metrics.
+
+![Patient Acquisition Funnel Analyzer result](/img/labs/claude-desktop/patient-acquisition-funnel-analyzer-result.png)
+
+---
+
+## Links
+
+- [View the Claude conversation](https://claude.ai/share/9254d905-28a1-400e-9894-bc5a3770ceed) -- see the full prompt and Claude's reasoning
+- [Open the artifact](https://claude.ai/public/artifacts/9bd68728-f3e3-4f78-a79f-f293e0cce91d) -- interact with the live result
+
+---
+
+## How to Recreate This
+
+1. Export your marketing funnel data -- ad spend, impressions, clicks, landing page visits, assessments started
+2. Open [Claude](https://claude.ai) and start a new conversation
+3. Share your stage-by-stage numbers and ask for a funnel analyzer that highlights drop-offs and calculates CPA
+4. Iterate -- add brand-level filtering, benchmark comparisons, or recommendation engines
+
+:::tip
+Multi-brand comparison is powerful for organizations with multiple service lines. Structuring your prompt around the specific metrics you track makes the output immediately actionable. See [Healthcare Prompt Scenarios](/prompting/healthcare-prompt-scenarios) for more domain-specific prompting patterns.
+:::

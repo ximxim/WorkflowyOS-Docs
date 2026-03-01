@@ -1,0 +1,54 @@
+---
+sidebar_position: 1
+title: "Investor Report Generator"
+description: "A tool that takes key metrics and narrative bullets, then generates a polished investor update with auto-generated charts."
+---
+
+# Investor Report Generator
+
+Turn 10 minutes of metric input into a board-ready investor update. This prototype accepts structured financial data -- MRR, ARR, customer counts, narrative highlights -- and produces a polished HTML report with trend indicators and formatted sections. Built entirely with a single Claude Code prompt, it demonstrates how AI can permanently eliminate a recurring pain point for finance and executive teams.
+
+---
+
+## Requirements
+
+The lab brief calls for a command-line tool that accepts structured input (key metrics, narrative bullets) and generates a formatted investor update as polished HTML or PDF-ready document. It should auto-generate charts from metrics data and use templated narrative matching common VC update formats. PurposeMed has raised $19.7M across investors including True North Fund, BDC Capital, and Panache Ventures, making investor updates a recurring, high-effort task.
+
+![Investor Report Generator requirements](/img/labs/claude-code/investor-report-generator-requirements.png)
+
+---
+
+## Result
+
+The finished app is a Next.js web application with a clean, form-driven interface. Users enter company information (name, report period, title), then add key metrics like MRR, ARR, and Active Customers with current and previous values. Each metric supports format toggles (dollar, number, percentage) and a growth indicator. The form generates a polished investor report ready for board distribution.
+
+![Investor Report Generator result](/img/labs/claude-code/investor-report-generator-result.png)
+
+---
+
+## Links
+
+- [Live demo](https://investor-report-generator.vercel.app/) -- interact with the deployed prototype
+- [Automation by Function](/automation/automation-by-function) -- explore more workflow automation patterns
+
+---
+
+## Screenshots
+
+The screenshot below shows the exact prompt used in Claude Code. Notice how the prompt references an attached requirements image and asks Claude Code to research Chakra UI components before building.
+
+![First prompt used in Claude Code](/img/labs/claude-code/investor-report-generator-first-prompt.png)
+
+---
+
+## How to Recreate This
+
+1. Save the requirements image above to your computer
+2. Open a terminal and run `claude` to start Claude Code
+3. Paste the prompt shown in the screenshot above, attaching the requirements image
+4. Claude Code will research the tech stack, plan the architecture, and build the full Next.js app
+5. Deploy to Vercel with `vercel deploy` or connect your GitHub repo
+
+:::tip
+This prototype was built with a single prompt -- no follow-up instructions needed. The key technique is providing a clear requirements image and letting Claude Code research the right UI library before building. See [Anatomy of a Great Prompt](/prompting/anatomy-of-a-great-prompt) for how to structure complex requests.
+:::

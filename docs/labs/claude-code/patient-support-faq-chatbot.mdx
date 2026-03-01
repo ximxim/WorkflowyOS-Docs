@@ -1,0 +1,67 @@
+---
+sidebar_position: 2
+title: "Patient Support FAQ Chatbot"
+description: "A prototype chatbot that answers patient questions about PrEP, ADHD, or HRT with safety guardrails built in."
+---
+
+# Patient Support FAQ Chatbot
+
+Build a functional patient support chatbot that answers questions about PrEP, ADHD, and HRT services -- with safety guardrails that refuse medical advice, route clinical questions to providers, and handle Rx refill requests appropriately. This lab goes beyond a simple chatbot: it demonstrates thoughtful design around stigma-sensitive populations, which is PurposeMed's core competency.
+
+---
+
+## Requirements
+
+The lab brief describes a functional chatbot using Claude's tool-use agents that answers common patient questions from a sample FAQ knowledge base. Key guardrails include refusing medical advice, routing clinical questions to providers, and handling Rx refill requests appropriately. Customer support automation was identified as a top pain point, and building a prototype with appropriate safety guardrails shows that AI support requires thoughtful design -- not just a chatbot bolted on.
+
+![Patient Support FAQ Chatbot requirements](/img/labs/claude-code/patient-support-faq-chatbot-requirements.png)
+
+---
+
+## Result
+
+The finished app is a PurposeMed Patient Support interface with tabs for PrEP, ADHD, and HRT topics. It displays a welcome message with a clear disclaimer ("I can help with general information, but I'm not a substitute for medical advice"), suggested questions for each topic, and a chat input. The footer includes PHIPA Compliant, Confidential, and Not Medical Advice badges, plus a prominent "Talk to a Provider" button for escalation.
+
+![Patient Support FAQ Chatbot result](/img/labs/claude-code/patient-support-faq-chatbot-result.png)
+
+---
+
+## Links
+
+- [Live demo](https://patient-support-chatbot.vercel.app/) -- interact with the deployed prototype
+- [Patient Data & Compliance](/governance/patient-data-and-compliance) -- understand the compliance considerations behind this lab
+
+---
+
+## Screenshots
+
+The first prompt asks Claude Code to build the app from the requirements image, using Chakra UI for the interface.
+
+![First prompt used in Claude Code](/img/labs/claude-code/patient-support-faq-chatbot-first-prompt.png)
+
+After the initial build, Claude Code needs an Anthropic API key to power the chat. The key goes in a `.env` file -- never paste API keys directly into the chat.
+
+![Setting up the API key in .env](/img/labs/claude-code/patient-support-faq-chatbot-api-key.png)
+
+After updating the `.env` file, resume the Claude Code session to verify the chat is working and test it with sample questions.
+
+![Resuming the Claude Code session](/img/labs/claude-code/patient-support-faq-chatbot-resume-session.png)
+
+---
+
+## How to Recreate This
+
+1. Save the requirements image above to your computer
+2. Open a terminal and run `claude` to start Claude Code
+3. Paste the prompt shown in the first screenshot, attaching the requirements image
+4. When Claude Code requests an API key, add `ANTHROPIC_API_KEY=your_key_here` to the `.env` file in your project -- never paste the key directly in the chat
+5. Resume the Claude Code session after updating the `.env` file so it can verify the chat works
+6. Deploy to Vercel with `vercel deploy` or connect your GitHub repo
+
+:::warning
+This lab requires an [Anthropic API key](https://console.anthropic.com/). The chatbot uses Claude as its backend to answer patient questions. Never commit API keys to version control -- always use environment variables.
+:::
+
+:::tip
+The multi-step workflow here -- build, configure secrets, resume -- is common when building AI-powered apps with Claude Code. The key is keeping sensitive credentials out of the chat and using `.env` files instead. See [MCP Connections](/automation/mcp-connections) for more on connecting AI tools to external services.
+:::

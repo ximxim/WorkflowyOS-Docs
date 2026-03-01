@@ -1,0 +1,45 @@
+---
+sidebar_position: 2
+title: "Startup Runway Scenario Modeler"
+description: "An interactive financial model with draggable sliders for burn rate, revenue, and scenario-based runway visualization."
+---
+
+# Startup Runway Scenario Modeler
+
+Build an interactive cash runway calculator that lets you adjust burn rate by category, tune revenue assumptions, and instantly see how your runway shifts across conservative, base, and optimistic scenarios. This replaces hours of Excel modeling with a visual, real-time tool.
+
+---
+
+## Requirements
+
+The lab brief outlines an interactive calculator with draggable sliders for monthly burn by category (clinicians, engineering, marketing, pharmacy ops, G&A) and current cash position. The tool should display three scenario timelines that update dynamically, including a "what if we hire 5 more clinicians?" toggle.
+
+![Startup Runway Scenario Modeler requirements](/img/labs/claude-desktop/startup-runway-scenario-modeler-requirements.png)
+
+---
+
+## Result
+
+The artifact is a dark-themed financial dashboard showing current cash ($2.5M), monthly burn ($440K), and runway projections across three scenarios. Sliders let you adjust starting cash, monthly revenue, and per-category burn. A line chart visualizes cash position over 24 months with conservative, base, and optimistic trend lines.
+
+![Startup Runway Scenario Modeler result](/img/labs/claude-desktop/startup-runway-scenario-modeler-result.png)
+
+---
+
+## Links
+
+- [View the Claude conversation](https://claude.ai/share/e004c5b1-f42b-4105-af68-b60de26eed0f) -- see the full prompt and Claude's reasoning
+- [Open the artifact](https://claude.ai/public/artifacts/27c96e26-f147-4876-940a-749b80a096e8) -- interact with the live result
+
+---
+
+## How to Recreate This
+
+1. Gather your financial data -- current cash, monthly revenue, and burn by department
+2. Open [Claude](https://claude.ai) and start a new conversation
+3. Share your numbers and ask for an interactive runway modeler with scenario sliders
+4. Iterate -- add breakeven timelines, hiring impact toggles, or brand-level breakdowns
+
+:::tip
+The key technique is providing structured financial data and asking for an interactive artifact with real-time controls. See [Anatomy of a Great Prompt](/prompting/anatomy-of-a-great-prompt) for how to structure complex requests.
+:::

@@ -1,0 +1,54 @@
+---
+sidebar_position: 3
+title: "Real-Time Strategic Polling Tool"
+description: "An interactive polling tool where a facilitator poses strategic questions and responses appear as live-updating visualizations."
+---
+
+# Real-Time Strategic Polling Tool
+
+Build an interactive polling tool where a facilitator poses strategic questions to a group and participants submit responses that appear as live-updating charts and word clouds. Designed for group exercises with PurposeMed-specific strategic questions like "What's our biggest growth bottleneck?" and "Which brand should get more investment next quarter?" This lab is a double aha moment -- first, AI built this functional app; then, the strategic questions surface honest responses harder to elicit in traditional discussion formats.
+
+---
+
+## Requirements
+
+The lab brief describes a live survey tool with PurposeMed-specific strategic questions. Responses appear as real-time updating charts and word clouds. The tool supports both multiple choice and open text question types. It's designed as a group exercise for all 16 executives, with 25 minutes to build and 15 minutes to use, making the combination of building the tool and then using it one of the most memorable exercises.
+
+![Real-Time Strategic Polling Tool requirements](/img/labs/claude-code/real-time-strategic-polling-tool-requirements.png)
+
+---
+
+## Result
+
+The finished app is a dark-themed Next.js application with two panels. The "Create a Poll" panel lets the facilitator set a session title, load default strategic questions, and add custom multiple choice or open text questions. The "Join a Poll" panel displays a 4-character session code for participants to enter and join. Once a poll is live, responses update in real time with visual charts and word clouds.
+
+![Real-Time Strategic Polling Tool result](/img/labs/claude-code/real-time-strategic-polling-tool-result.png)
+
+---
+
+## Links
+
+- [Live demo](https://strategic-polling-tool.vercel.app/) -- interact with the deployed prototype
+- [Change Management](/leadership/change-management) -- learn how to facilitate AI adoption exercises like this one
+
+---
+
+## Screenshots
+
+The screenshot below shows the exact prompt used in Claude Code. The same pattern applies: attach the requirements image, ask Claude Code to research the tech stack, and let it build the full app.
+
+![First prompt used in Claude Code](/img/labs/claude-code/real-time-strategic-polling-tool-first-prompt.png)
+
+---
+
+## How to Recreate This
+
+1. Save the requirements image above to your computer
+2. Open a terminal and run `claude` to start Claude Code
+3. Paste the prompt shown in the screenshot above, attaching the requirements image
+4. Claude Code will research the tech stack, plan the architecture, and build the full Next.js app
+5. Deploy to Vercel with `vercel deploy` or connect your GitHub repo
+
+:::tip
+This prototype was built with a single prompt. The real-time functionality works without a database by using in-memory state -- perfect for a demo or workshop setting. For production use, you would add a database and WebSocket connections. See [Building Simple Tools](/automation/building-simple-tools) for more on rapid prototyping with AI.
+:::
